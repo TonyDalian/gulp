@@ -8,8 +8,9 @@
 <input type="hidden" name="xxx" id="xxx">
 <script>
 function test(number) {
-	var numInput;
+    var numInput;
 	
+    // First method
     // if(number>0 && number<=100){
 	   //  numInput = parseInt(number);
     // }else if(number>100){
@@ -18,6 +19,7 @@ function test(number) {
     // 	numInput = "";
     // }
 
+    // Second method
     if(number.length==1){
 		numInput = number.replace(/[^1-9]/g,'')
 	}else{
