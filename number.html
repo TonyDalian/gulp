@@ -12,19 +12,19 @@ function test(number) {
 	
     // First method
     // if(number>0 && number<=100){
-	   //  numInput = parseInt(number);
+    //     numInput = parseInt(number);
     // }else if(number>100){
     //     numInput = 100;
     // }else{
-    // 	numInput = "";
+    // 	   numInput = "";
     // }
 
     // Second method
     if(number.length==1){
-		numInput = number.replace(/[^1-9]/g,'')
-	}else{
-	 	numInput = number.replace(/\D/g,'')
-	}
+       numInput = number.replace(/[^1-9]/g,'')
+    }else{
+       numInput = number.replace(/\D/g,'')
+    }
 
     if(number>100){
        numInput = 100;
