@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>number</title>
+</head>
+<body>
+<input id="num" onkeyup="test(this.value)" onpaste="return false;"> 
+<input type="hidden" name="xxx" id="xxx">
+<script>
+function test(number) {
+    var numInput;
+	
+    // First method
+    // if(number>0 && number<=100){
+    //     numInput = parseInt(number);
+    // }else if(number>100){
+    //     numInput = 100;
+    // }else{
+    // 	   numInput = "";
+    // }
+
+    // Second method
+    if(number.length==1){
+       numInput = number.replace(/[^1-9]/g,'')
+    }else{
+       numInput = number.replace(/\D/g,'')
+    }
+
+    if(number>100){
+       numInput = 100;
+    }
+
+    document.querySelector("#num").value = numInput;
+    document.querySelector("#xxx").value = numInput;
+}
+</script>
+
+</body>
+</html>
