@@ -1,1 +1,4 @@
-tony git branch -b
+tony
+git branch branch-name
+git checkout branch-name
+
